@@ -2,16 +2,53 @@
   "name": "@tirette/tester",
   "version": "1.0.0",
   "description": "An API wall between third party testing libraries and Tirette's main projects.",
-  "main": "/src/index.js",
+  "main": "./lib-esm/index.js",
   "repository": "git://github.com/tirette/tester.git",
   "author": "Luïs De Zutter <luzedz@gmail.com>",
   "license": "MIT",
   "private": false,
+  "bin": {
+    "test": "./lib-cjs/script.js"
+  },
+  "typings": "./lib-esm/index.d.ts",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
-  "files": ["./dist"],
+  "files": [
+    "./lib-cjs",
+    "./lib-esm"
+  ],
   "scripts": {
-    "build": "tsc"
+    "build": "tsc && tsc -m es6 --outDir lib-esm"
+  },
+  "peerDependencies": {
+    "react": "16.x",
+    "react-dom": "16.x",
+    "react-test-renderer": "16.x"
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
+    "@babel/preset-typescript": "^7.12.1",
+    "@testing-library/dom": "^7.19.0",
+    "@testing-library/jest-dom": "^5.9.0",
+    "@testing-library/react": "^10.2.1",
+    "@testing-library/react-hooks": "^3.3.0",
+    "@testing-library/user-event": "^12.0.11",
+    "@tirette/cli-core": "^1.0.1",
+    "@tirette/linter": "^1.0.2",
+    "@tirette/utilities": "^1.0.0",
+    "babel": "^6.23.0",
+    "babel-jest": "^26.6.1",
+    "babel-plugin-require-context-hook": "^1.0.0",
+    "jest": "^26.6.1",
+    "typescript": "^4.0.5"
+  },
+  "devDependencies": {
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-test-renderer": "16.13.1"
   }
 }
