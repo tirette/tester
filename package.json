@@ -1,6 +1,6 @@
 {
   "name": "@tirette/tester",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An API wall between third party testing libraries and Tirette's main projects.",
   "main": "./lib-esm/index.js",
   "repository": "git://github.com/tirette/tester.git",
