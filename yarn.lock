@@ -1274,6 +1274,13 @@
   dependencies:
     minimist "^1.2.5"
 
+"@tirette/cli-core@^1.0.2":
+  version "1.0.2"
+  resolved "https://npm.pkg.github.com/download/@tirette/cli-core/1.0.2/5e0914b8348270018121d899d44cecdf60b6001a291ed2bf527606091371c037#32211079e76d2eae505f6edd7a3a3468b100413c"
+  integrity sha512-xQiJvbrRb0BbjzSZMiwV7T0Io7fSqgGDbPhwh7OebJCiNhZB/XAPBJb64wsNt2hjSoIpersgvE/0X8lFC3v3IQ==
+  dependencies:
+    minimist "^1.2.5"
+
 "@tirette/linter@^1.0.2":
   version "1.0.2"
   resolved "https://npm.pkg.github.com/download/@tirette/linter/1.0.2/c0eafb656f157bbe5689e82c8b38a25e401adc3f51a5a2052fc15b494dafb62f#32d4e9a77d54bffe5998cc75362533245b463a7b"
